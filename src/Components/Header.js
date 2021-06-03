@@ -2,20 +2,14 @@ import React from "react";
 import TypeWriter from "react-typewriter";
 
 const Header = ({ data }) => {
+  const getInTouch = () => {
+    window.open(
+      `mailto:${data.email}`
+    );
+  };
+
   if (data) {
-    var name = data.name;
-    var occupation = data.occupation;
-    var description = data.description;
-    var city = data.address.city;
-    var networks = data.social.map(function (network) {
-      return (
-        <li key={network.name}>
-          <a href={network.url}>
-            <i className={network.className}></i>
-          </a>
-        </li>
-      );
-    });
+    var name = data.name;  
   }
 
   return (
@@ -40,18 +34,13 @@ const Header = ({ data }) => {
             </a>
           </li>
           <li>
-            <a className="smoothscroll" href="#resume">
-              Resume
+            <a className="smoothscroll" href="#experience">
+              Experience
             </a>
           </li>
           <li>
             <a className="smoothscroll" href="#portfolio">
-              Works
-            </a>
-          </li>
-          <li>
-            <a className="smoothscroll" href="#testimonials">
-              Testimonials
+              Work
             </a>
           </li>
           <li>
@@ -65,14 +54,14 @@ const Header = ({ data }) => {
       <div className="row banner">
         <div className="banner-text">
           <h1 className="responsive-headline">
-            <TypeWriter typing={0.5}>{name ? `I'm ${name}.` : null}</TypeWriter>
+            <TypeWriter typing={0.5}>
+              {name ? `Hello, I'm ${name}` : null}
+            </TypeWriter>
           </h1>
-          <h3>
-            Based in {city}. <span>{occupation}</span>. {description}.
-          </h3>
+          <h3>I build things for the web</h3>
           <hr />
-          <ul className="social">{networks}</ul>
         </div>
+        <button type="submit" style={{background:"#418841"}} onClick={getInTouch}>Get in Touch</button>
       </div>
 
       <p className="scrolldown">

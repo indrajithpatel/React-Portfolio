@@ -2,10 +2,12 @@ import React from "react";
 
 const Portfolio = ({ data }) => {
   if (data) {
-    var projects = data.projects.map(function (projects) {
+    var projects = data.projects.map(function (projects, index) {
       var projectImage = "images/portfolio/" + projects.image;
       return (
         <div key={projects.title} className="columns portfolio-item">
+          <h2>{projects.title} </h2>
+          <span>{projects.description}</span>
           <div className="item-wrap">
             <a href={projects.url} title={projects.title}>
               <img alt={projects.title} src={projectImage} />
@@ -20,6 +22,7 @@ const Portfolio = ({ data }) => {
               </div>
             </a>
           </div>
+          <p>Technologies Used : React, Material UI, Firebase</p>
         </div>
       );
     });
@@ -27,17 +30,15 @@ const Portfolio = ({ data }) => {
 
   return (
     <section id="portfolio">
-      <div className="row">
-        <div className="twelve columns collapsed">
-          <h1>Check Out Some of My Works.</h1>
-
-          <div
-            id="portfolio-wrapper"
-            className="bgrid-quarters s-bgrid-thirds cf"
-          >
-            {projects}
-          </div>
+       <div className="row portfolio">
+        <div className="three columns header-col">
+          <h1>
+            <span>Personal Projects</span>
+          </h1>
         </div>
+
+        <div className="nine columns main-col">
+          {projects}</div>
       </div>
     </section>
   );

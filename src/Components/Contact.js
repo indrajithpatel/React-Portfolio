@@ -7,11 +7,6 @@ const Contact = ({ data }) => {
   const [message, setMessage] = useState("");
 
   if (data) {
-    var contactName = data.name;
-    var street = data.address.street;
-    var city = data.address.city;
-    var state = data.address.state;
-    var zip = data.address.zip;
     var phone = data.phone;
     var contactEmail = data.email;
     var contactMessage = data.contactmessage;
@@ -119,17 +114,12 @@ const Contact = ({ data }) => {
 
         <aside className="four columns footer-widgets">
           <div className="widget widget_contact">
-            <h4>Address and Phone</h4>
+            <h4>Contact Details</h4>
             <p className="address">
-              {contactName}
+              <span style={{color:"aqua", fontSize : "16px"}}>Email : {contactEmail}</span>
               <br />
-              {contactEmail}
+              <span style={{color:"aqua", fontSize : "16px"}}>Phone : {phone}</span>
               <br />
-              <br />
-              {street} <br />
-              {city}, {state} {zip}
-              <br />
-              <span>{phone}</span>
             </p>
           </div>
         </aside>

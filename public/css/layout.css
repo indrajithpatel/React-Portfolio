@@ -9,7 +9,7 @@
    a. General Styles
    b. Header Styles
    c. About Section
-   d. Resume Section
+   d. experience Section
    e. Portfolio Section
    f. Call To Action Section
    g. Testimonials Section
@@ -65,7 +65,7 @@ header .banner-text h1 {
    text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
 }
 header .banner-text h3 {
-   font: 18px/1.9em 'librebaskerville-regular', serif;
+   font: 38px/1.9em 'librebaskerville-regular', serif;
    color: #A8A8A8;
    margin: 0 auto;
    width: 70%;
@@ -202,9 +202,20 @@ ul#nav li.current a { color: #F06000; }
    margin-bottom: 12px;
 }
 #about p {
-   line-height: 30px;
-   color: #7A7A7A;
+   line-height: 35px;
+   font-size: 19px;
 }
+#about li {
+   color: #11ABB0;
+    font-size: 18px;
+    font-family: sans-serif
+}
+
+#about strong {
+   font-size: 19px;
+   color: #11ABB0;
+}
+
 #about .profile-pic {
    position: relative;
    width: 120px;
@@ -230,194 +241,94 @@ ul#nav li.current a { color: #F06000; }
    font-size: 20px;
 }
 
+#about .skills-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 200px));
+    padding: 0px;
+    margin: 20px 0px 0px;
+    overflow: hidden;
+    list-style: none;
+}
+
+#about .skills-list li::before {
+   content: "▹";
+   left: 0px;
+   color: var(--green);
+   font-size: var(--fz-sm);
+   line-height: 12px;
+}
+
+
+
 
 /* ------------------------------------------------------------------ */
-/* d. Resume Section
+/* d. experience Section
 /* ------------------------------------------------------------------ */
 
-#resume {
-   background: #fff;
+#experience {
    padding-top: 90px;
    padding-bottom: 72px;
    overflow: hidden;
 }
 
-#resume a, #resume a:visited  { color: #11ABB0; }
-#resume a:hover, #resume a:focus { color: #313131; }
+#experience a, #experience a:visited  { color: #11ABB0; }
+#experience a:hover, #experience a:focus { color: #313131; }
 
-#resume h1 {
+#experience h1 {
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
 }
-#resume h1 span {
+#experience h1 span {
    border-bottom: 3px solid #11ABB0;
    padding-bottom: 6px;
+   color: white;
 }
-#resume h3 {
-   font: 25px/30px 'opensans-bold', sans-serif;
+#experience h3 {
+   font: 22px/30px 'opensans-regular', sans-serif;
 }
 
-#resume .header-col { padding-top: 9px; }
-#resume .main-col { padding-right: 10%; }
+#experience .header-col { padding-top: 9px; }
+#experience .main-col { 
+   padding-left: 0px !important; 
+}
 
 .education, .work {
    margin-bottom: 48px;
-   padding-bottom: 24px;
-   border-bottom: 1px solid #E8E8E8;
 }
-#resume .info {
+#experience .info {
    font: 16px/24px 'librebaskerville-italic', serif;
-   color: #6E7881;
+   color: darkcyan;
    margin-bottom: 18px;
    margin-top: 9px;
 }
-#resume .info span {
+#experience .info span {
    margin-right: 5px;
-   margin-left: 5px;
+   margin-left: 15px;
+   color: white;
 }
-#resume .date {
+#experience .date {
    font: 15px/24px 'opensans-regular', sans-serif;
    margin-top: 6px;
 }
 
-/*----------------------------------------------*/
-/*	Skill Bars
-/*----------------------------------------------*/
-
-.bars {
-	width: 95%;
-	float: left;
-	padding: 0;
-	text-align: left;
-}
-.bars .skills {
-  	margin-top: 36px;
-   list-style: none;
-}
-.bars li {
-   position: relative;
-  	margin-bottom: 60px;
-  	background: #ccc;
-  	height: 42px;
-  	border-radius: 3px;
-}
-.bars li em {
-	font: 15px 'opensans-bold', sans-serif;
-   color: #313131;
-	text-transform: uppercase;
-   letter-spacing: 2px;
-	font-weight: normal;
-   position: relative;
-	top: -36px;
-}
-.bar-expand {
-   position: absolute;
-   left: 0;
-   top: 0;
-
-   margin: 0;
-   padding-right: 24px;
-  	background: #313131;
-   display: inline-block;
-  	height: 42px;
-   line-height: 42px;
-   border-radius: 3px 0 0 3px;
-}
-/*
-.git {
-  	-moz-animation: git 2s ease;
-  	-webkit-animation: git 2s ease;
-}
-.illustrator {
-  	-moz-animation: illustrator 2s ease;
-  	-webkit-animation: illustrator 2s ease;
-}
-.reactjs {
-  	-moz-animation: reactjs 2s ease;
-  	-webkit-animation: reactjs 2s ease;
-}
-.css {
-  	-moz-animation: css 2s ease;
-  	-webkit-animation: css 2s ease;
-}
-.html5 {
-  	-moz-animation: html5 2s ease;
-  	-webkit-animation: html5 2s ease;
-}
-.vuejs {
-  	-moz-animation: vuejs 2s ease;
-  	-webkit-animation: vuejs 2s ease;
-}
-.mongodb {
-  	-moz-animation: mongodb 2s ease;
-  	-webkit-animation: mongodb 2s ease;
+#experience h3 {
+   color: white;
 }
 
-@-moz-keyframes git {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
-}
-@-moz-keyframes illustrator {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
-}
-@-moz-keyframes reactjs {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-moz-keyframes css {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
-}
-@-moz-keyframes html5 {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
-@-moz-keyframes vuejs {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-moz-keyframes mongodb {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
+#experience p {
+   font-size: 16px;
+    font-family: unset
 }
 
-@-webkit-keyframes photoshop {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
-}
-@-webkit-keyframes illustrator {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
-}
-@-webkit-keyframes reactjs {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-webkit-keyframes css {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
-}
-@-webkit-keyframes html5 {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
-@-webkit-keyframes vuejs {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-webkit-keyframes mongodb {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}  */
+
 
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section
 /* ------------------------------------------------------------------ */
 
 #portfolio {
-   background: #ebeeee;
+   background:#2B2B2B;
    padding-top: 90px;
    padding-bottom: 60px;
 }
@@ -425,9 +336,32 @@ ul#nav li.current a { color: #F06000; }
    font: 15px/24px 'opensans-semibold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
-   text-align: center;
+   text-align: left;
    margin-bottom: 48px;
    color: #95A3A3;
+}
+
+#portfolio h1 span {
+   border-bottom: 3px solid #11ABB0;
+   padding-bottom: 6px;
+   color: white
+}
+
+#portfolio h2 {
+   color: white;
+   font-size: 24px;
+   margin-bottom: 16px;
+   font-family: "opensans-regular";
+}
+
+#portfolio p {
+   color: #11ABB0;
+   font-size: 16px;
+}
+
+#portfolio span {
+   font-size: 16px;
+   font-family: unset;
 }
 
 /* Portfolio Content */
@@ -436,13 +370,25 @@ ul#nav li.current a { color: #F06000; }
    background: #fff;
    overflow: hidden;
    position: relative;
-
+   width: 50%;
+   margin-bottom: 15px;
+   margin-top: 15px;
    -webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
+
+.portfolio-item {
+   margin-bottom: 15px;
+}
+
+#portfolio-wrapper {
+   display: flex;
+   justify-content: center;
+}
+
 .portfolio-item .item-wrap a {
    display: block;
    cursor: pointer;
@@ -816,11 +762,12 @@ call-to-action .button {
    font-family: 'FontAwesome';
    content: "\f0e0";
 	padding-right: 10px;
-	font-size: 72px;
+	font-size: 40px;
    line-height: 72px;
    text-align: left;
    float: left;
    color: #ebeeee;
+   position: absolute;
 }
 
 #contact h4 {
@@ -829,8 +776,9 @@ call-to-action .button {
    margin-bottom: 6px;
 }
 #contact p.lead {
-   font: 18px/36px 'opensans-light', sans-serif;
+   font: 26px/36px 'opensans-light', sans-serif;
    padding-right: 3%;
+   color: white;
 }
 #contact .header-col { padding-top: 6px; }
 

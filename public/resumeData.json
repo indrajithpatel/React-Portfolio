@@ -1,121 +1,77 @@
 {
   "main": {
-    "name": "Sonny Sangha",
-    "occupation": "CEO of PAPA",
+    "name": "Indrajith Patel",
+    "occupation": "Frontend Lead at Informatica",
     "description": "I eat, sleep and breathe React",
     "image": "profilepic.jpg",
-    "bio": "Hi there! I am Sonny! You might also know me as PAPA React. I've been coding for over 10 years now. As a Full Stack developer I've worked both with startups and large corporations to help build & scale their companies. Along the journey I realised my passion existed in helping others excel and pursue their dreams as upcoming developers. With this passion, I have now trained thousand's of developers across the globe. Through live coaching sessions on Youtube, I have accumulated several MILLION views demonstrating how to apply developer skills in a range of cool builds and challenges. I deliver REAL VALUE by teaching REAL WORLD projects to help students enter the world of web development. You’ll get hands-on experience and learn the skills that are required to succeed in the real-world in this community.",
-    "contactmessage": "Get in touch with me to be a part of the PAPA fam!",
-    "email": "papareact.team@gmail.com",
-    "phone": "+44 1234567899",
+    "contactmessage": "Get in Touch",
+    "email": "indrajithpatel1992@gmail.com",
+    "phone": "+91 9590998817",
     "address": {
-      "street": "123 Dev Lane",
-      "city": "London",
-      "state": "Devosphere",
-      "zip": "W3B D3V"
+      "city": "Bengaluru",
+      "state": "Karnataka"
     },
-    "website": "https://www.papareact.com/course",
-    "resumedownload": "http://papareact.com",
     "social": [
       {
-        "name": "youtube",
-        "url": "https://www.youtube.com/channel/UCqeTj_QAnNlmt7FwzNwHZnA",
-        "className": "fa fa-youtube"
-      },
-      {
-        "name": "facebook",
-        "url": "https://www.facebook.com/sonny.sangha.3",
-        "className": "fa fa-facebook"
-      },
-      {
         "name": "linkedin",
-        "url": "https://www.linkedin.com/in/saajansangha",
+        "url": "https://www.linkedin.com/in/indrajithpatelr/",
         "className": "fa fa-linkedin"
       },
       {
         "name": "instagram",
-        "url": "https://www.instagram.com/ssssangha/",
+        "url": "https://www.instagram.com/indrajithpatel/",
         "className": "fa fa-instagram"
       },
       {
         "name": "github",
-        "url": "https://github.com/PapaReact",
+        "url": "https://github.com/indrajithpatel",
         "className": "fa fa-github"
       }
     ]
   },
   "resume": {
-    "skillmessage": "My Programming Language Proficiency",
-    "education": [
-      {
-        "school": "University of Kent - UK",
-        "degree": "Bachelor's Degree, Computer Science",
-        "graduated": "July 2016",
-        "description": "Graduated with First Class Honours"
-      }
-    ],
     "work": [
       {
-        "company": "PAPA",
-        "title": "Founder and CEO",
-        "years": "May 2019 - Present",
+        "company": "Informatica",
+        "location": "Bengaluru, Karntaka India",
+        "icon" : "images/portfolio/informatica-logo.jpg",
+        "title": "Lead UI Developer",
+        "years": "April 2019 - Present",
+        "description": "Part of Enterprise Data Catalog team which enables the customer to find their data with a simple powerful semantic search. Developed Resusable React Components which can be used across multiple applications"
+      },
+      {
+        "company": "SAP Labs",
+        "location": "Bengaluru, Karntaka India",
+        "icon" : "images/portfolio/saplabs-logo.jpg",
+        "title": "Senior UI Developer",
+        "years": "May 2016 - April 2019",
+        "description": "Part of SAP IoT Application Enablement DevX Team which enables the customers to create IoT Applications using Templates and Reusable controls in SAP WEBIDE. Developed Freestyle and IoT Application Templates which will allow customers to create application with minimal or no Coding"
+      },
+      {
+        "company": "Capgemini",
+        "location": "Bengaluru, Karntaka India",
+        "icon" : "images/portfolio/capgemini-logo.png",
+        "title": "UI Developer",
+        "years": "Jan 2014 - May 2016",
         "description": "Cloning all the apps possible. On the way to clone the world! Building the PAPA Fam as large as possible."
-      }
-    ],
-    "skills": [
-      {
-        "name": "ReactJs",
-        "level": "100%"
-      },
-      {
-        "name": "Python",
-        "level": "85%"
-      },
-      {
-        "name": "Git",
-        "level": "70%"
-      },
-      {
-        "name": "JavaScript",
-        "level": "99%"
-      },
-      {
-        "name": "Web Development",
-        "level": "95%"
       }
     ]
   },
   "portfolio": {
     "projects": [
       {
-        "title": "Snapchat Clone (React JS)",
+        "title": "Job Portal Application",
         "category": "",
-        "image": "snapchat.jpg",
-        "url": "https://youtu.be/1kGISk5ft2w"
+        "image": "job-portal.png",
+        "description": "This Application is built for both employee and Job seeker. This will let an employee post a job and also the freelancer will be able to view the job posted and will be apply for the job. Once the job is applied, the employee can view the applicant details",
+        "url": "https://job-portal-clone.netlify.app/"
       },
       {
-        "title": "Gmail Clone (React JS)",
-        "category": "",
-        "image": "gmail.jpg",
-        "url": "https://youtu.be/b7nrXjS6Dqs"
-      },
-      {
-        "title": "LinkedIn Clone (React JS)",
+        "title": "LinkedIn Clone",
         "category": "",
         "image": "linkedin.jpg",
-        "url": "https://youtu.be/QaYts9sPmcY"
-      }
-    ]
-  },
-  "testimonials": {
-    "testimonials": [
-      {
-        "text": "Sonny is absolutely excellent, his depth of knowledge & his mentorship really meant a lot to us... I would definitely recommend",
-        "user": "Jorge Fouto"
-      },
-      {
-        "text": "Learning with Sonny has been AWESOME, he makes learning React so easy and approachable, you'll finally feel like you know what's going on!",
-        "user": "Adam Curtis"
+        "description": "This is a clone of LinkedIn Application. The cloned version allows the users to post and view the feeds",
+        "url": ""
       }
     ]
   }
